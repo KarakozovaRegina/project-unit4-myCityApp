@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">project-unit4-myCityApp</string>
+    <string name="title_bar">Cafes in Seoul</string>
+    <string name="cafe_1">Koriko Cafe</string>
+    <string name="cafe_2">10G</string>
+    <string name="cafe_3">Bean Brothers</string>
+    <string name="cafe_4">PlantCha-teul</string>
+    <string name="cafe_5">Poem</string>
+    <string name="cafe_6">Jeontong Dawon</string>
+    <string name="cafe_7">BooksCooks</string>
+    <string name="cafe_8">Cafes in Seoul</string>
+    <string name="details">Ssit eiusmod incididunt magna consectetur do ipsum do. Llabore dolore dolore et tempor adipiscing adipiscing adipiscing sed ut magna. Ssed do dolore tempor dolore sit dolore sed elit do tempor.</string>
+</resources>
