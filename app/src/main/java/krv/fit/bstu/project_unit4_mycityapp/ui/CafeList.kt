@@ -35,6 +35,7 @@ import krv.fit.bstu.project_unit4_mycityapp.ui.theme.Projectunit4myCityAppTheme
 @Composable
 fun CafeList(
     cafes:List<Cafe>,
+    onClick: (Cafe) -> Unit,
     contentPadding: PaddingValues = PaddingValues(0.dp),
     modifier: Modifier
 ) {
@@ -45,7 +46,8 @@ fun CafeList(
     ) {
         items(cafes, key = { cafe -> cafe.id}){ cafe ->
             CafeListItem(
-                cafe = cafe
+                cafe = cafe,
+                onItemClick = onClick
             )
         }
     }
@@ -66,11 +68,16 @@ private fun CafeListImageItem(cafe: Cafe, modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun CafeListItem(cafe: Cafe, modifier: Modifier = Modifier) {
+private fun CafeListItem(
+    cafe: Cafe,
+    onItemClick: (Cafe) -> Unit,
+    modifier: Modifier = Modifier
+) {
     Card(
         modifier = modifier
             .fillMaxWidth()
-            .padding(horizontal = dimensionResource(R.dimen.padding_medium))
+            .padding(horizontal = dimensionResource(R.dimen.padding_medium)),
+        onClick = { onItemClick(cafe) }
     ){
         Row(
             modifier = Modifier
@@ -96,7 +103,7 @@ private fun CafeListItem(cafe: Cafe, modifier: Modifier = Modifier) {
     }
 }
 
-
+/*
 @Preview
 @Composable
 fun ShowListCafe() {
@@ -109,4 +116,4 @@ fun ShowListCafe() {
             )
         }
     }
-}
+}*/

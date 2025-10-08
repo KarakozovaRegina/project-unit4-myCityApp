@@ -5,6 +5,7 @@ import krv.fit.bstu.project_unit4_mycityapp.model.Cafe
 
 object CafesObject {
 
+    val defaultCafe = getCafes()[0]
     fun getCafes(): List<Cafe> {
         return listOf(
             Cafe(
